@@ -12,14 +12,14 @@
           width="1900" height="1500"
           viewBox="0 0 1900 1500">
         <title>Bias Codex - evolutionary psychology</title>
-        
+
         <style type="text/css">
           text { font-family: "DejaVu Sans", sans-serif; }
           text a:hover { fill:   blue; text-decoration: underline; }
           text, circle { stroke: none; }
           path         { fill:   none; }
           a ~ circle, a ~ text { transition: fill 0.5s; }
-          
+
           a { cursor: pointer; }
           a:visited { all: unset; } /* workaround for weirdness in Chrome */
           a:hover path  , a:hover ~ path { stroke: black; stroke-width: 2px; }
@@ -27,17 +27,17 @@
            a:hover text  , a:hover ~ text { fill: black; }
           a:hover text { text-decoration: underline; }
         </style>
-        
+
         <rect id="background" width="100%" height="100%" fill="#fff"/>
-        
+
         <g id="biases" transform="translate(950,785)">
         <script type="text/javascript"><![CDATA[
-        
+
         var link_prefix = "https://en.wikipedia.org/wiki/";
-        
-        var tree_text = {name: "THE COGNITIVE BIAS CODEX - evolutionary psychology variant", children:[
-          {name: "Focusing on relevant \ninformation instincts", children:[
-            {name: "Focus on common events", children:[
+
+        var tree_text = {name: "BŁĘDY POZNAWCZE", children:[
+          {name: "Zbyt dużo informacji", children:[
+            {name: "Zauważamy rzeczy już \nzapamiętane lub często powtarzane", children:[
               {name: "Availability heuristic"     ,article: "Availability_heuristic"},
               {name: "Attentional bias"           ,article: "Attentional_bias"},
               {name: "Illusory truth effect"      ,article: "Illusory_truth_effect"},
@@ -51,7 +51,7 @@
               {name: "Omission bias"              ,article: "Omission_bias"},
               {name: "Base rate fallacy"          ,article: "Base_rate_fallacy"},
             ]},
-            {name: "Focus on the new and unsafe", children:[
+            {name: "Dziwne, zabawne, uderzające lub \n antropomorficzne rzeczy wyróżniają \n się bardziej niż rzeczy zwykłe / nieśmieszne", children:[
               {name: "Bizarreness effect"         ,article: "Bizarreness_effect"},
               {name: "Humor effect"               ,article: "List_of_cognitive_biases#Humor_effect"},
               {name: "Von Restorff effect"        ,article: "Von_Restorff_effect"},
@@ -59,7 +59,7 @@
               {name: "Self–relevance effect"      ,article: "Self-reference_effect"},
               {name: "Negativity bias"            ,article: "Negativity_bias"},
             ]},
-            {name: "Focus on human errors", children:[
+            {name: "Zauważamy, kiedy zachodzi zmiana", children:[
               {name: "Anchoring"         ,article: "Anchoring"},
               {name: "Conservatism"      ,article: "Conservatism_(belief_revision)"},
               {name: "Contrast effect"   ,article: "Contrast_effect"},
@@ -69,7 +69,7 @@
               {name: "Money illusion"    ,article: "Money_illusion"},
               {name: "Weber–Fechner law" ,article: "Weber–Fechner_law"},
             ]},
-            {name: "Sustaining understanding", children:[
+            {name: "Przyciągają nas szczegóły, które \n potwierdzają nasze własne \n istniejące przekonania", children:[
               {name: "Confirmation bias"             ,article: "Confirmation_bias"},
               {name: "Congruence bias"               ,article: "Congruence_bias"},
               {name: "Post–purchase rationalization" ,article: "Choice-supportive_bias"},
@@ -84,14 +84,14 @@
               {name: "Continued influence effect"    ,article: "Confirmation_bias#continued_influence_effect"},
               {name: "Semmelweis reflex"             ,article: "Semmelweis_reflex"},
             ]},
-            {name: "Focus on human errors", children:[
+            {name: "Łatwiej zauważamy wady u innych niż u siebie", children:[
               {name: "Bias blind spot" ,article: "Bias_blind_spot"},
               {name: "Naïve cynicism"  ,article: "Naïve_cynicism"},
               {name: "Naïve realism"   ,article: "Naïve_realism_(psychology)"},
             ]},
           ]},
-          {name: "Estimation instincts", children:[
-            {name: "Conclusion estimations", children:[
+          {name: "Wnioskowanie na\npodstawie częściowych\ndanych", children:[
+            {name: "Próbujemy dopasować wzorzec lub\nhistorię nawet obserwując wycinek danych", children:[
               {name: "Confabulation"                ,article: "Confabulation"},
               {name: "Clustering illusion"          ,article: "Clustering_illusion"},
               {name: "Insensitivity to sample size" ,article: "Insensitivity_to_sample_size"},
@@ -106,7 +106,7 @@
               {name: "Pareidolia"                   ,article: "Pareidolia"},
               {name: "Anthropomorphism"             ,article: "Anthropomorphism#Psychology"},
             ]},
-            {name: "Estimation based on knowledge", children:[
+            {name: "Wypełniamy brakujące informacje w oparciu\n o stereotypy, ogólniki i wcześniejsze historie", children:[
               {name: "Group attribution error"    ,article: "Group_attribution_error"},
               {name: "Ultimate attribution error" ,article: "Ultimate_attribution_error"},
               {name: "Stereotyping"               ,article: "Stereotype"},
@@ -120,7 +120,7 @@
               {name: "Bandwagon effect"           ,article: "Bandwagon_effect"},
               {name: "Placebo effect"             ,article: "Placebo"},
             ]},
-            {name: "Security in the known", children:[
+            {name: "Zakładamy że ludzie i rzeczy,\n które znamy są lepsze.", children:[
               {name: "Out–group homogeneity bias" ,article: "Out-group_homogeneity"},
               {name: "Cross–race effect"          ,article: "Cross-race_effect"},
               {name: "In–group favoritism"        ,article: "In-group_favoritism"}, // NOTE(TilmannR): changed name from "bias" to "favoritism"
@@ -131,7 +131,7 @@
               {name: "Reactive devaluation"       ,article: "Reactive_devaluation"},
               {name: "Well–traveled road effect"  ,article: "Well_travelled_road_effect"},
             ]},
-            {name: "Fast number estimations", children:[
+            {name: "Dokonujemy uproszczeń liczbowych \n i prawdopodobieństwa aby łatwiej \n zrozumieć pewne rzeczy", children:[
               {name: "Mental accounting"             ,article: "Mental_accounting"},
               {name: "Appeal to probability fallacy" ,article: "Appeal_to_probability"},
               {name: "Normalcy bias"                 ,article: "Normalcy_bias"},
@@ -142,7 +142,7 @@
               {name: "Denomination effect"           ,article: "Denomination_effect"},
               {name: "The magical number 7 ± 2"      ,article: "The_Magical_Number_Seven,_Plus_or_Minus_Two"},
             ]},
-            {name: "Wants estimations", children:[
+            {name: "Zakładamy że \n wiemy co inni myślą", children:[
               {name: "Illusion of transparency"       ,article: "Illusion_of_transparency"},
               {name: "Curse of knowledge"             ,article: "Curse_of_knowledge"},
               {name: "Spotlight effect"               ,article: "Spotlight_effect"},
@@ -150,7 +150,7 @@
               {name: "Illusion of external agency"    ,article: "Illusion_of_external_agency"},
               {name: "Illusion of asymmetric insight" ,article: "Illusion_of_asymmetric_insight"},
             ]},
-            {name: "Self is sustained", children:[
+            {name: "Zakładmy że nasz obecny sposób\nmyślenia obowiązywał w przeszłości\ni będzie w przyszłości", children:[
               {name: "Telescoping effect"    ,article: "Telescoping_effect"},
               {name: "Rosy retrospection"    ,article: "Rosy_retrospection"},
               {name: "Hindsight bias"        ,article: "Hindsight_bias"},
@@ -167,8 +167,8 @@
               {name: "Self–consistency bias" ,article: "List_of_cognitive_biases#Consistency_bias"},
             ]},
           ]},
-          {name: "Proactivity instincts", children:[
-            {name: "Self deception insticts to cause proactivity", children:[
+          {name: "Potrzeba szybkiego\ndziałania", children:[
+            {name: "Aby działać, musimy mieć pewność,\n że możemy wywrzeć wpływ i czuć, że to,\n co robimy, jest ważne", children:[
               {name: "Overconfidence effect"            ,article: "Overconfidence_effect"},
               {name: "Social desirability bias"         ,article: "Social_desirability_bias"},
               {name: "Third–person effect"              ,article: "Third-person_effect"},
@@ -191,12 +191,12 @@
               {name: "Risk compensation"                ,article: "Risk_compensation"},
               {name: "Peltzman effect"                  ,article: "Risk_compensation#Peltzman_effect"},
             ]},
-            {name: "Focusing on current tasks", children:[
+            {name: "Aby zachować koncentrację, \n preferujemy bezpośrednią, \n konkretną rzecz, która jest przed nami", children:[
               {name: "Hyperbolic discounting"     ,article: "Hyperbolic_discounting"},
               {name: "Appeal to novelty"          ,article: "Appeal_to_novelty"},
               {name: "Identifiable victim effect" ,article: "Identifiable_victim_effect"},
             ]},
-            {name: "Focusing on tasks", children:[
+            {name: "Aby coś dokończyć kończymy te rzeczy\nw które zainwestowaliśmy czas i energię", children:[
               {name: "Sunk cost fallacy"            ,article: "Sunk_cost#Loss_aversion_and_the_sunk_cost_fallacy"}, // NOTE(TilmannR): "Sunk Cost Fallacy" redirects to "Escalation_of_commitment", but "Sunk cost fallacy" redirects to "Sunk_cost#Loss_aversion_and_the_sunk_cost_fallacy".
               {name: "Irrational escalation"        ,article: "Escalation_of_commitment"},
               {name: "Escalation of commitment"     ,article: "Escalation_of_commitment"},
@@ -211,7 +211,7 @@
               {name: "Endowment effect"             ,article: "Endowment_effect"},
               {name: "Backfire effect"              ,article: "Confirmation_bias#backfire_effect"},
             ]},
-            {name: "Protection of status", children:[
+            {name: "W celu uniknięcia błędów \n  zachowujemy autonomię i unikamy \n  nieodwracalnych decyzji", children:[
               {name: "System justification"     ,article: "System_justification"},
               {name: "Reverse psychology"       ,article: "Reverse_psychology"},
               {name: "Reactance"                ,article: "Reactance_(psychology)"},
@@ -219,7 +219,7 @@
               {name: "Social comparison effect" ,article: "Social_comparison_bias"}, // NOTE(TilmannR): bias or effect?
               {name: "Status quo bias"          ,article: "Status_quo_bias"},
             ]},
-            {name: "Simplifying options and choices", children:[
+            {name: "Preferujemy proste, kompletne rozwiązania \n zamiast skomplikowanych i niejednoznacznych ", children:[
               {name: "Ambiguity bias"         ,article: "Ambiguity_effect"}, // NOTE(TilmannR): bias or effect?
               {name: "Information bias"       ,article: "Information_bias_(psychology)"},
               {name: "Belief bias"            ,article: "Belief_bias"},
@@ -232,8 +232,8 @@
               {name: "Less–is–better effect"  ,article: "Less-is-better_effect"},
             ]},
           ]},
-          {name: "Selecting memories \nfor storage instincts", children:[
-            {name: "Calibration of memories/understandings", children:[
+          {name: "Co powinniśmy \n zapamiętać?", children:[
+            {name: "Edytujemy i wzmacniamy \n niektóre wspomnienia po fakcie", children:[
               {name: "Misattribution of memory" ,article: "Misattribution_of_memory"},
               {name: "Source confusion"         ,article: "Misattribution_of_memory#Source_confusion"},
               {name: "Cryptomnesia"             ,article: "Cryptomnesia"},
@@ -241,7 +241,7 @@
               {name: "Suggestibility"           ,article: "Suggestibility"},
               {name: "Spacing effect"           ,article: "Spacing_effect"},
             ]},
-            {name: "Estimation shortcuts", children:[
+            {name: "Odrzucamy szczegóły, \n aby utworzyć ogólniki", children:[
               {name: "Implicit association" ,article: "Implicit_stereotype"},
               {name: "Implicit stereotypes" ,article: "Implicit_stereotype"},
               {name: "Stereotypical bias"   ,article: "Implicit_stereotype"},
@@ -249,7 +249,7 @@
               {name: "Negativity bias"      ,article: "Negativity_bias"},
               {name: "Fading affect bias"   ,article: "Fading_affect_bias"},
             ]},
-            {name: "Simplifying events", children:[
+            {name: "Sprowadzamy wydarzenia i listy\ndo ich kluczowych elementów", children:[
               {name: "Peak–end rule"           ,article: "Peak–end_rule"},
               {name: "Leveling and sharpening" ,article: "Leveling_and_sharpening"},
               {name: "Misinformation effect"   ,article: "Misinformation_effect"},
@@ -264,7 +264,7 @@
               {name: "Serial–position effect"  ,article: "Serial-position_effect"},
               {name: "Suffix effect"           ,article: "List_of_cognitive_biases#Suffix_effect"},
             ]},
-            {name: "Specified memory storage", children:[
+            {name: "Wspomnienia przechowujemy w\nróżny sposób w zależności od\ntego, jak je doświadczyliśmy", children:[
               {name: "Levels–of–processing effect"  ,article: "Levels-of-processing_effect"},
               {name: "Absent–mindedness"            ,article: "Absent-mindedness"},
               {name: "Testing effect"               ,article: "Testing_effect"},
@@ -274,7 +274,7 @@
             ]},
           ]},
         ]};
-        
+
         var tree_colors = [
           "#098",// cyan  (originally #7DB5BA)
           "#07A",// blue  (originally #93B6D8)
@@ -282,101 +282,99 @@
           "#888",// gray  (originally #B2BBB9)
         ];
         var tree_radii = [142,284,428];
-        
+
         var title_text_size = 32;
         var category_text_size = 32;
         var subcategory_text_size = 15;
         var entry_text_size = 11;
-        
+
         var title_y = -720;
         var category_x = 770;
         var category_y = 580;
-        
+
         var sub_category_spacing = 1.0;
         var category_spacing = 0.0;
-        
+
         var small_dot_radius = 3.0;
         var big_dot_radius = 10.0;
-        
+
         var circumcircle_radius = 630.0;
         var circumcircle_color = "#CCCCCC";
-        
-        
-        
+
         var polar_to_cartesian = function(radius, angle, full_angle){
           var angle_in_radians = angle * 2*Math.PI / full_angle;
           var x = radius * Math.sin(angle_in_radians);
           var y =-radius * Math.cos(angle_in_radians);
           return {x:x,y:y};
         };
-        
+
         var lerp = function(a, b, t){
           return (1.0-t)*a + t*b;
         };
-        
+
         var push_radial_path = function(string_array, inner_radius, inner_angle, outer_radius, outer_angle, full_angle){
           var inner_position = polar_to_cartesian(inner_radius, inner_angle, full_angle);
           var outer_position = polar_to_cartesian(outer_radius, outer_angle, full_angle);
-          
+
           var curviness = 0.5; // 0 => straight line, 1.0 => 90 degree turns
           var inner_control_radius = lerp(inner_radius, outer_radius, curviness);
           var outer_control_radius = lerp(outer_radius, inner_radius, curviness);
-          
+
           var inner_control = polar_to_cartesian(inner_control_radius, inner_angle, full_angle);
           var outer_control = polar_to_cartesian(outer_control_radius, outer_angle, full_angle);
-          
+
           string_array.push('<path d="M',
             inner_position.x,' ',inner_position.y,' C ',
             inner_control.x ,' ',inner_control.y ,', ',
             outer_control.x ,' ',outer_control.y ,', ',
             outer_position.x,' ',outer_position.y,'"/>\n');
         };
-        
+
         var push_circle = function(string_array, position, radius){
             string_array.push('<circle cx="',position.x,'" cy="',position.y,'" r="',radius,'"/>\n');
         };
-        
+
         var push_text = function(string_array, input_string, text_size, attributes, alignment = 0.5)
         {
           var lines = input_string.split('\n');
           var num_lines = lines.length;
           if(!(num_lines > 0)) return;
           var line_height = text_size * 1.5;
-          
+
           string_array.push('<text ');
           string_array.push.apply(string_array, attributes); // Push an array of elements
           string_array.push('>');
-          
+
           var total_height = line_height*(num_lines-1) + text_size;
           var lowest_position = text_size;
           var hightest_position = text_size-total_height;
           var y = lerp(lowest_position, hightest_position, alignment);
           string_array.push('<tspan x="0" y="',y,'">',lines[0],'</tspan>');
-          
+
           for(var i = 1; i < num_lines; ++i){
             string_array.push('<tspan x="0" dy="',line_height,'">',lines[i],'</tspan>');
           }
-          
+
           string_array.push('</text>\n');
         };
-        
+
         var generate = function(){
         // Figure out the positioning of the entries
           var angle_offset = 0.5 * (1 + category_spacing + sub_category_spacing);
           var accumulator = angle_offset;
           var num_sub_categories = 0;
           var num_entries = 0;
-          
+
           var categories = tree_text.children || [];
           var num_categories = categories.length;
           for(var i = 0; i < num_categories; ++i){
             var category = categories[i];
-            
+
             var sub_categories = category.children || [];
             num_sub_categories += sub_categories.length;
             for(var k = 0; k < sub_categories.length; ++k){
               var sub_category = sub_categories[k];
-              
+
               var entries = sub_category.children || [];
               num_entries += entries.length;
               for(var m = 0; m < entries.length; ++m){
@@ -384,29 +382,29 @@
                 accumulator += 1;
               }
               accumulator += sub_category_spacing;
-              
+
               var first_angle = entries[0].angle;
               var last_angle = entries[entries.length-1].angle;
               sub_category.angle = (first_angle + last_angle) * 0.5;
             }
             accumulator += category_spacing;
-            
+
             var first_angle = sub_categories[0].angle;
             var last_angle = sub_categories[sub_categories.length-1].angle;
             category.angle = (first_angle + last_angle) * 0.5;
           }
           var full_angle = accumulator - angle_offset;
-          
+
         // 'Draw' everything
           var result = []; // Array of strings and numbers to be merged into the SVG's content.
           var text_flipping_attributes = 'text-anchor="end" transform="rotate(180 12,0)"';
-          
+
           // Draw the outer circle
           result.push('<circle r="',circumcircle_radius,'" style="stroke:',circumcircle_color,';" fill="none"/>\n');
-          
+
           // Draw the title
           result.push('<text style="font-size:',title_text_size,'px; font-weight:bold; text-anchor:middle;" y="',title_y,'">',tree_text.name,'</text>');
-        
+
           // Draw the categories
           result.push('<g style="font-size:',category_text_size,'px;">\n');
           {
@@ -420,20 +418,20 @@
             push_text(result, categories[3].name, category_text_size, attributes_3);
           }
           result.push('</g>');
-          
+
           // Draw everything else
           result.push('<g style="font-size:',entry_text_size,'px;">\n');
           for(var i = 0; i < num_categories; ++i){
             var category = categories[i];
             result.push('<g style="fill:',tree_colors[i],'; stroke:',tree_colors[i],';">\n');
-            
+
             var sub_categories = category.children || [];
             var num_sub_categories = sub_categories.length;
             for(var k = 0; k < num_sub_categories; ++k){
               var sub_category = sub_categories[k];
               result.push('<g>\n');
               var is_flipped = (sub_category.angle > (full_angle / 2));
-              
+
               // Draw the entries and the curvy trees
               var entries = sub_category.children || [];
               var num_entries = entries.length;
@@ -454,11 +452,11 @@
                 }
               }
               push_radial_path(result, tree_radii[0], category.angle, tree_radii[1], sub_category.angle, full_angle);
-              
+
               // Draw the subcategories
               var position = polar_to_cartesian(circumcircle_radius, sub_category.angle, full_angle);
               push_circle(result, position, big_dot_radius);
-              
+
               var text_attributes = ['style="font-size:',subcategory_text_size,'px;" '];
               if(is_flipped){
                 text_attributes.push('transform="translate(',position.x-24,',',position.y,')" text-anchor="end"');
@@ -472,22 +470,22 @@
             result.push('</g>\n');
           }
           result.push('</g>\n');
-          
+
           // Truncate all numbers.
           for(var i = 0; i < result.length; ++i){
             if(typeof result[i] !== "number"){ continue; }
             result[i] = result[i].toFixed(1);
           }
-          
+
           var biases = document.getElementById("biases");
           biases.innerHTML = result.join('');
         };
-        
+
         generate();
-        
+
         ]]></script>
         </g>
-        
+
         <g id="brain" transform="translate(950,775) scale(0.09)">
         <path style="fill:#979797;" d="m921,1085-83-125-399,0,281,227,141-21"/>
         <path style="fill:#646464;" d="m554,991c47,24,135,119,151,143,7-20-51-113-120-151-33-18-65-62-65-62l-26,18s13,27,60,51m79-83-34,7c25,29,158,186,200,206-27-46-165-213-165-213zm152,110c-35-53-43-123-43-123l-36,11s34,96,51,120c16,23,68,68,68,68s-7-27-40-76zm127,27c-26-38-90-112-91-164h-28s-13,13,6,54c20,40,80,120,94,137,14,16,1,64-68,87-70,22-106,22-130-10-23-33-101-92-159-125-57-33-67-74-67-74l-41,7s14,39,37,64c23,24,93,39,147,92,45,43,71,63,87,76,15,12,90,27,171-20,80-47,69-84,42-122m-286-70c26,46,104,143,146,173-16-24-146-173-146-173z"/>
