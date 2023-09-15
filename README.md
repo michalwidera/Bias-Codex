@@ -1,23 +1,21 @@
-# Bias-Codex
+# Lista Błędów Poznawczych - Cognitive Bias Codex (PL)
 
-I applied more "proper" evolutionary psychology to the model as he made it super accecible
-and therefore used layman explanations instead of academic terms.
+Spróbowałem przetłumaczyć to co jest dostępne na wykresie: [Cognitive_bias_codex_en](https://upload.wikimedia.org/wikipedia/commons/6/65/Cognitive_bias_codex_en.svg)
 
-Biases are often instincts that then cause a bias because they are made to calculate things
-and apply solutions a certain way. So a bias for carring for a son is making you save him over a random person. 
-This is "irrational" compared to what a cold robot would do. But it's still solving a problem well and making
-sure your genes can reproduce effectively.
-
-Seeing biases as problems is the wrong way to look at things. Seeing them as not objective is correct.
+Nie jestem specjalistą od psychologii - próbowałem zrozumieć i zorganizować sobie i innych wiedzę.
+Okazało się że wiele pojęć jest zdublowanych i/lub odnosi się do tych samych źródeł pojęć.
+Uproszeczenia forka z którego pobrałem dane wydały mi się zbyt ogólne. Postarałem się przywrócić wersję ze źródła.
 
 
+Fork zrobiłem i przerobiłem z https://github.com/JurijFedorov/Bias-Codex
+
+/Michał
+---
 
 
 All these people did an amazing job! It's by far the best bias list I have seen anywhere and there is nothing even close to it.
 
 You can see the original interactive model here: https://commons.wikimedia.org/wiki/File:Cognitive_bias_codex_en.svg
-
-
 
 
 Attribution:
@@ -26,7 +24,7 @@ English: Wikipedia’s list of 188 cognitive biases, grouped into categories and
 Date	6 June 2018
 Source	This file was derived from: The Cognitive Bias Codex - 180+ biases, designed by John Manoogian III (jm3).png: The Cognitive Bias Codex - 180+ biases, designed by John Manoogian III (jm3).png
 
-Author	
+Author
 design: John Manoogian III
 categories and descriptions: Buster Benson
 implementation: TilmannR
